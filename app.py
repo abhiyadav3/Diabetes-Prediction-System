@@ -20,6 +20,3 @@ def predict():
     prediction = svm.predict(std_data)
     result = 'The person is diabetic' if prediction[0] else 'The person is not diabetic'
     return render_template('index.html', prediction_text=result)
-
-if __name__ == "__main__":
-    app.run(debug=True)
